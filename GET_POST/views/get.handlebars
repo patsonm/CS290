@@ -1,0 +1,16 @@
+<h1>GET Request Received</h1>
+<table>
+    <!––has any length-->
+	{{#if data.length}}
+		<tr>
+			<th><Strong>Name</Strong></th>
+			<th>Value</th>
+		</tr>
+	{{/if}}
+	{{#each data}}
+		<tr>
+			<td>{{this.name}}</td>
+			<td>{{this.value}}</td>
+		</tr>
+	{{/each}}
+</table>

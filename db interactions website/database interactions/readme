@@ -1,0 +1,5 @@
+dont forget to check ajax port numbers for update
+and in server.js
+update dbcon with passwork
+
+This files uses jquery, dont forget to run the script in main handlebars

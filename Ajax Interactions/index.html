@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+</head>
+<body>
+<h2>Weather Provided by OpenWeatherMap</h2>
+<form>
+    <fieldset>
+        <legend>Search Weather by Zip or City.</legend>
+        <label for="zipCode">Zip Code</label>
+        <input type="text" name="zipCode" id="zipCode">
+        <input type="submit" id="zipCodeSubmit">
+        <br/>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+        <input type="submit" id="cityStateSubmit">
+    </fieldset>
+</form>
+<div>
+    <h2>Weather Results:</h2>
+    <ul>
+        <li><b>City: </b><span id="cityName"></span></li>
+        <li><b>Country: </b><span id="country"></span></li>
+        <li><b>Temperature (deg F): </b><span id="temp"></span></li>
+        <li><b>High of (deg F): </b><span id="temp_max"></span></li>
+        <li><b>Humidity (%): </b><span id="humidity"></span></li>
+    </ul>
+</div>
+
+<form>
+    <fieldset>
+        <legend>Submit to http://httpbin.org/post</legend>
+        <label for="input">Secret?</label>
+        <input type="text" name="input" id="input">
+        <input type="submit" id="inputSubmit">
+    </fieldset>
+</form>
+
+    
+<div>
+    <h2>Whisper to me and I will respond</h2>
+    <ul>
+        <li><b>Whispered: </b><span id="whisper"></span></li>
+        <li><b>Reply: </b><span id="response"></span></li>
+    </ul>
+</div>
+
+
+</body>
+</html>
